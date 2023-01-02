@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+
+<html lang="zxx">
+
+<head>
+	<meta charset="utf-8">
+	<title>tlacim3d.sk</title>
+
+	<!-- mobile responsive meta -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- ** Plugins Needed for the Project ** -->
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" href="plugins/themify/css/themify-icons.css">
+	<link rel="stylesheet" href="plugins/counto/animate.css">
+	<link rel="stylesheet" href="plugins/aos/aos.css">
+	<link rel="stylesheet" href="plugins/owl-carousel/owl.carousel.min.css">
+	<link rel="stylesheet" href="plugins/owl-carousel/owl.theme.default.min.css">
+	<link rel="stylesheet" href="plugins/magnific-popup/magnific-popup.css">
+	<link rel="stylesheet" href="plugins/animated-text/animated-text.css">
+
+	<!-- Main Stylesheet -->
+	<link href="css/style.css" rel="stylesheet">
+	<!-- Bootstrap Icon -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+	<!-- Favicon -->
+	<link rel="icon" type="image/x-icon" href="images/favicon/favicon.png" />
+</head>
+
+<body>
+
+	<!-- Navigation Start -->
+	<!-- Header Start -->
+
+	<nav class="navbar navbar-expand-lg  main-nav" id="navbar">
+		<!-- <img src="images/dragon.webp" width="50%" alt=""> -->
+		<div class="container">
+			<a class="navbar-brand" href="index.html">
+				<img src="images/logo.png" width="80%" alt="" class="img-fluid">
+			</a>
+
+			<button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
+				data-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="ti-align-justify"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarsExample09">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item active"><a class="nav-link" href="index.html">Domov</a></li>
+
+					<li class="nav-item">
+						<a class="nav-link" href="about.html">O tlači</a>
+
+					</li>
+
+					<li class="nav-item dropdown active">
+						<a class="nav-link dropdown-toggle" href="#" id="dropdown02" data-toggle="dropdown"
+							aria-haspopup="true" aria-expanded="false">Portfólio</a>
+						<ul class="dropdown-menu" aria-labelledby="dropdown02">
+							<li><a class="dropdown-item" href="title-postavybusty.html">Postavy / Busty</a></li>
+							<li><a class="dropdown-item" href="title-interierovedekoracie.html">Interiérové
+									Dekorácie</a>
+							</li>
+							<li><a class="dropdown-item" href="title-drziakystojany.html">Držiaky / Stojany</a></li>
+							<!-- <li><a class="dropdown-item" href="title-malickostihracky.html">Maličkosti / Hračky</a></li> -->
+							<li><a class="dropdown-item" href="title-vizitkyoznamenia.html">Vizitky / Oznámenia</a></li>
+							<li><a class="dropdown-item" href="title-dielysuciastky.html">Náhradné Diely / Súčiastky</a>
+							</li>
+						</ul>
+					</li>
+
+					<li class="nav-item">
+						<a class="nav-link" href="price.html">Cenník</a>
+					</li>
+					<li class="nav-item"><a class="nav-link" href="delivery.html">Dodanie</a></li>
+					<li class="nav-item"><a class="nav-link" href="contact.html">Kontakt</a></li>
+				</ul>
+				<i class="flag flag-slovakia"></i>
+			</div>
+		</div>
+	</nav>
+
+	<!-- Header Close -->
+
+	<!-- Banner Start -->
+	<section class="section banner wallpaper-up">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-10">
+					<h2 class="cd-headline clip is-full-width mb-4 ">
+						<span class="text-3d">3D</span> Modely / Tlač<br>
+						<span class="cd-words-wrapper text-success">
+							<b class="is-visible">Interiérové Dekorácie</b>
+							<b>Komiksové Postavy / Busty</b>
+							<b>Držiaky / Stojany</b>
+							<b>Vizitky / Oznámenia</b>
+							<b>Náhradné Diely / Súčiastky</b>
+							<b>Podľa Vlastného Výberu</b>
+						</span>
+					</h2>
+					<ul>
+						<li>Tlač na 3D tlačiarni Original Prusa i3 MK3S+</li>
+						<li>S kvalitným filamentom Devil Design</li>
+						<li>Technológiou FDM/FFF (Fused Deposition Modeling / Fused Filament Fabrication)</li>
+						<li>Návrh a 3D modelovanie vo Fusion360 a SketchUpe</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Banner End -->
+
+	<!-- POrtfolio start -->
+	<section class="portfolio mb-5 border-top section">
+		<div class="container">
+			<div class="row mb-3">
+				<div class="col-10">
+					<div class="btn-group btn-group-toggle " data-toggle="buttons">
+						<label class="btn active ">
+							<input type="radio" name="shuffle-filter" value="all" checked="checked" />Všetky Modely
+						</label>
+						<label class="btn">
+							<input type="radio" name="shuffle-filter" value="postavy-busty" />Postavy/Busty
+						</label>
+						<label class="btn">
+							<input type="radio" name="shuffle-filter" value="dekoracie" />Interiérové Dekorácie
+						</label>
+						<label class="btn">
+							<input type="radio" name="shuffle-filter" value="drziaky-stojany" />Držiaky/Stojany
+						</label>
+						<label class="btn">
+							<input type="radio" name="shuffle-filter" value="vizitky-oznamenia" />Vizitky/Oznámenia
+						</label>
+						<!-- <label class="btn">
+							<input type="radio" name="shuffle-filter" value="malickosti-hracky" />Maličkosti/Hračky
+						</label> -->
+						<label class="btn">
+							<input type="radio" name="shuffle-filter" value="diely-suciastky" />Náhradné Diely/Súčiastky
+						</label>
+					</div>
+				</div>
+			</div>
+
+			<div class="row shuffle-wrapper portfolio-gallery">
+
+				<div class="col-lg-3 col-4 mb-2 index-padding shuffle-item" data-groups="[&quot;postavy-busty&quot;]">
+					<div class="position-relative inner-box">
+						<div class="image position-relative ">
+							<img src="images/postavy-title/balrog_title.jpg" alt="portfolio-image"
+								class="img-fluid w-100 d-block">
+							<div class="overlay-box">
+								<div class="overlay-inner">
+									<a class="overlay-content" href="single-balrog.html">
+										<h5 class="mb-0">Balrog</h5>
+										<p>Vstúpiť</p>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-4 mb-2 index-padding shuffle-item" data-groups="[&quot;postavy-busty&quot;]">
+					<div class="position-relative inner-box">
+						<div class="image position-relative ">
+							<img src="images/postavy-title/slayer_title.jpg" alt="portfolio-image"
+								class="img-fluid w-100 d-block">
+							<div class="overlay-box">
+								<div class="overlay-inner">
+									<a class="overlay-content" href="single-doomslayer.html">
+										<h5 class="mb-0">Doom Slayer</h5>
+										<p>Vstúpiť</p>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-4 mb-2 index-padding shuffle-item" data-groups="[&quot;postavy-busty&quot;]">
+					<div class="position-relative inner-box">
+						<div class="image position-relative ">
+							<img src="images/postavy-title/alien_title.jpg" alt="portfolio-image"
+								class="img-fluid w-100 d-block">
+							<div class="overlay-box">
+								<div class="overlay-inner">
+									<a class="overlay-content" href="single-alienbirth.html">
+										<h5 class="mb-0">Alien Xenomorph:Birth</h5>
+										<p>Vstúpiť</p>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-4 mb-2 index-padding shuffle-item" data-groups="[&quot;postavy-busty&quot;]">
+					<div class="position-relative inner-box">
+						<div class="image position-relative ">
+							<img src="images/postavy-title/dragon_title.jpg" alt="portfolio-image"
+								class="img-fluid w-100 d-block">
+							<div class="overlay-box">
+								<div class="overlay-inner">
+									<a class="overlay-content" href="single-dragonoguardingegg.html">
+										<h5 class="mb-0">Dragon:Guarding Egg</h5>
+										<p>Vstúpiť</p>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-4 mb-2 index-padding shuffle-item" data-groups="[&quot;postavy-busty&quot;]">
+					<div class="position-relative inner-box">
+						<div class="image position-relative ">
+							<img src="images/postavy-title/hulk_title.jpg" alt="portfolio-image"
+								class="img-fluid w-100 d-block">
+							<div class="overlay-box">
+								<div class="overlay-inner">
+									<a class="overlay-content" href="single-hulk.html">
+										<h5 class="mb-0">Hulk</h5>
+										<p>Vstúpiť</p>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-4 mb-2 index-padding shuffle-item" data-groups="[&quot;postavy-busty&quot;]">
+					<div class="position-relative inner-box">
+						<div class="image position-relative ">
+							<img src="images/busty-title/kratos_title.jpg" alt="portfolio-image"
+								class="img-fluid w-100 d-block">
+							<div class="overlay-box">
+								<div class="overlay-inner">
+									<a class="overlay-content" href="single-kratos.html">
+										<h5 class="mb-0">Kratos:God of War</h5>
+										<p>Vstúpiť</p>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-4 mb-2 index-padding shuffle-item" data-groups="[&quot;dekoracie&quot;]">
+					<div class="position-relative inner-box">
+						<div class="image position-relative ">
+							<img src="images/comingsoon_title.jpg" alt="portfolio-image"
+								class="img-fluid w-100 d-block">
+							<div class="overlay-box">
+								<div class="overlay-inner">
+									<a class="overlay-content" href="single-retroclock.html">
+										<h5 class="mb-0">Retro Clock</h5>
+										<p>Vstúpiť</p>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-4 mb-2 index-padding shuffle-item" data-groups="[&quot;dekoracie&quot;]">
+					<div class="position-relative inner-box">
+						<div class="image position-relative ">
+							<img src="images/dekoracie-title/voronoi_title.jpg" alt="portfolio-image"
+								class="img-fluid w-100 d-block">
+							<div class="overlay-box">
+								<div class="overlay-inner">
+									<a class="overlay-content" href="single-voronoivase.html">
+										<h5 class="mb-0">Voronoi Vase</h5>
+										<p>Vstúpiť</p>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-4 mb-2 index-padding shuffle-item" data-groups="[&quot;vizitky-oznamenia&quot;]">
+					<div class="position-relative inner-box">
+						<div class="image position-relative ">
+							<img src="images/vizitkyoznamenia-title/vizitkatlacim_title.jpg" alt="portfolio-image"
+								class="img-fluid w-100 d-block">
+							<div class="overlay-box">
+								<div class="overlay-inner">
+									<a class="overlay-content" href="single-vizitkatlacim.html">
+										<h5 class="mb-0">Vizitka: Tlacim3D</h5>
+										<p>Vstúpiť</p>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-4 mb-2 index-padding shuffle-item" data-groups="[&quot;diely-suciastky&quot;]">
+					<div class="position-relative inner-box">
+						<div class="image position-relative ">
+							<img src="images/dielysuciastky-title/sada_title.jpg" alt="portfolio-image"
+								class="img-fluid w-100 d-block">
+							<div class="overlay-box">
+								<div class="overlay-inner">
+									<a class="overlay-content" href="single-sadafestool.html">
+										<h5 class="mb-0">Sada Držiakov: FESTOOL</h5>
+										<p>Vstúpiť</p>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-4 mb-2 index-padding shuffle-item" data-groups="[&quot;dekoracie&quot;]">
+					<div class="position-relative inner-box">
+						<div class="image position-relative ">
+							<img src="images/comingsoon_title.jpg" alt="portfolio-image"
+								class="img-fluid w-100 d-block">
+							<div class="overlay-box">
+								<div class="overlay-inner">
+									<a class="overlay-content" href="single-eastereggwavy.html">
+										<h5 class="mb-0">Easter Egg: Wavy</h5>
+										<p>Vstúpiť</p>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-4 mb-2 index-padding shuffle-item" data-groups="[&quot;dekoracie&quot;]">
+					<div class="position-relative inner-box">
+						<div class="image position-relative ">
+							<img src="images/dekoracie-title/colibri_title.jpg" alt="portfolio-image"
+								class="img-fluid w-100 d-block">
+							<div class="overlay-box">
+								<div class="overlay-inner">
+									<a class="overlay-content" href="single-colibrilightholder.html">
+										<h5 class="mb-0">Colibri:Light Holder</h5>
+										<p>Vstúpiť</p>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-4 mb-2 index-padding shuffle-item" data-groups="[&quot;vizitky-oznamenia&quot;]">
+					<div class="position-relative inner-box">
+						<div class="image position-relative ">
+							<img src="images/vizitkyoznamenia-title/leo_title.jpg" alt="portfolio-image"
+								class="img-fluid w-100 d-block">
+							<div class="overlay-box">
+								<div class="overlay-inner">
+									<a class="overlay-content" href="single-lithophaneleo.html">
+										<h5 class="mb-0">Fotografia: Lithophane</h5>
+										<p>Vstúpiť</p>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-4 mb-2 index-padding shuffle-item" data-groups="[&quot;diely-suciastky&quot;]">
+					<div class="position-relative inner-box">
+						<div class="image position-relative ">
+							<img src="images/dielysuciastky-title/mafell_title.jpg" alt="portfolio-image"
+								class="img-fluid w-100 d-block">
+							<div class="overlay-box">
+								<div class="overlay-inner">
+									<a class="overlay-content" href="single-mafellboschfsn.html">
+										<h5 class="mb-0">Mafell Bosch FSN: Vodiaca Koľajnica</h5>
+										<p>Vstúpiť</p>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-4 mb-2 index-padding shuffle-item" data-groups="[&quot;drziaky-stojany&quot;]">
+					<div class="position-relative inner-box">
+						<div class="image position-relative ">
+							<img src="images/drziakystojany-title/shelfsupport_title.jpg" alt="portfolio-image"
+								class="img-fluid w-100 d-block">
+							<div class="overlay-box">
+								<div class="overlay-inner">
+									<a class="overlay-content" href="single-shelfsupport.html">
+										<h5 class="mb-0">Shelf Support</h5>
+										<p>Vstúpiť</p>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-4 mb-2 index-padding shuffle-item" data-groups="[&quot;vizitky-oznamenia&quot;]">
+					<div class="position-relative inner-box">
+						<div class="image position-relative ">
+							<img src="images/vizitkyoznamenia-title/festool_title.jpg" alt="portfolio-image"
+								class="img-fluid w-100 d-block">
+							<div class="overlay-box">
+								<div class="overlay-inner">
+									<a class="overlay-content" href="single-logofestool.html">
+										<h5 class="mb-0">Logo: FESTOOL</h5>
+										<p>Vstúpiť</p>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-4 mb-2 index-padding shuffle-item" data-groups="[&quot;postavy-busty&quot;]">
+					<div class="position-relative inner-box">
+						<div class="image position-relative ">
+							<img src="images/postavy-title/mondoshawan_title.jpg" alt="portfolio-image"
+								class="img-fluid w-100 d-block">
+							<div class="overlay-box">
+								<div class="overlay-inner">
+									<a class="overlay-content" href="single-mondoshawan.html">
+										<h5 class="mb-0 ">Mondoshawan:5 Element</h5>
+										<p>Vstúpiť</p>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-4 mb-2 index-padding shuffle-item" data-groups="[&quot;postavy-busty&quot;]">
+					<div class="position-relative inner-box">
+						<div class="image position-relative ">
+							<img src="images/busty-title/skull_title.jpg" alt="portfolio-image"
+								class="img-fluid w-100 d-block">
+							<div class="overlay-box">
+								<div class="overlay-inner">
+									<a class="overlay-content" href="single-calaveracornuda.html">
+										<h5 class="mb-0">Skull:Calavera Cornuda</h5>
+										<p>Vstúpiť</p>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-4 mb-2 index-padding shuffle-item" data-groups="[&quot;vizitky-oznamenia&quot;]">
+					<div class="position-relative inner-box">
+						<div class="image position-relative ">
+							<img src="images/vizitkyoznamenia-title/michaela_title.jpg" alt="portfolio-image"
+								class="img-fluid w-100 d-block">
+							<div class="overlay-box">
+								<div class="overlay-inner">
+									<a class="overlay-content" href="single-meninymichaela.html">
+										<h5 class="mb-0">Meniny: Michaela</h5>
+										<p>Vstúpiť</p>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-4 mb-2 index-padding shuffle-item" data-groups="[&quot;postavy-busty&quot;]">
+					<div class="position-relative inner-box">
+						<div class="image position-relative ">
+							<img src="images/busty-title/t2_title.jpg" alt="portfolio-image"
+								class="img-fluid w-100 d-block">
+							<div class="overlay-box">
+								<div class="overlay-inner">
+									<a class="overlay-content" href="single-terminator2.html">
+										<h5 class="mb-0">Terminator:T-800</h5>
+										<p>Vstúpiť</p>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-4 mb-2 index-padding shuffle-item" data-groups="[&quot;postavy-busty&quot;]">
+					<div class="position-relative inner-box">
+						<div class="image position-relative ">
+							<img src="images/busty-title/pharaoh.jpg" alt="portfolio-image"
+								class="img-fluid w-100 d-block">
+							<div class="overlay-box">
+								<div class="overlay-inner">
+									<a class="overlay-content" href="single-undeadpharaoh.html">
+										<h5 class="mb-0">Undead Pharaoh</h5>
+										<p>Vstúpiť</p>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-4 mb-2 index-padding shuffle-item" data-groups="[&quot;dekoracie&quot;]">
+					<div class="position-relative inner-box">
+						<div class="image position-relative ">
+							<img src="images/dekoracie-title/hexonwall_title.jpg" alt="portfolio-image"
+								class="img-fluid w-100 d-block">
+							<div class="overlay-box">
+								<div class="overlay-inner">
+									<a class="overlay-content" href="single-hexonwall.html">
+										<h5 class="mb-0">Hex on Wall</h5>
+										<p>Vstúpiť</p>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-4 mb-2 index-padding shuffle-item" data-groups="[&quot;postavy-busty&quot;]">
+					<div class="position-relative inner-box">
+						<div class="image position-relative ">
+							<img src="images/busty-title/davidbeckham_title.jpg" alt="portfolio-image"
+								class="img-fluid w-100 d-block">
+							<div class="overlay-box">
+								<div class="overlay-inner">
+									<a class="overlay-content" href="single-davidbeckham.html">
+										<h5 class="mb-0">David Beckham</h5>
+										<p>Vstúpiť</p>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-4 mb-2 index-padding shuffle-item" data-groups="[&quot;dekoracie&quot;]">
+					<div class="position-relative inner-box">
+						<div class="image position-relative ">
+							<img src="images/dekoracie-title/turtle_title.jpg" alt="portfolio-image"
+								class="img-fluid w-100 d-block">
+							<div class="overlay-box">
+								<div class="overlay-inner">
+									<a class="overlay-content" href="single-turtlejewellerybox.html">
+										<h5 class="mb-0">Turtle:Jewelery Box</h5>
+										<p>Vstúpiť</p>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-4 mb-2 index-padding shuffle-item" data-groups="[&quot;drziaky-stojany&quot;]">
+					<div class="position-relative inner-box">
+						<div class="image position-relative ">
+							<img src="images/drziakystojany-title/lampholder_title.jpg" alt="portfolio-image"
+								class="img-fluid w-100 d-block">
+							<div class="overlay-box">
+								<div class="overlay-inner">
+									<a class="overlay-content" href="single-lampholder.html">
+										<h5 class="mb-0">Lamp Holder</h5>
+										<p>Vstúpiť</p>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-4 mb-2 index-padding shuffle-item" data-groups="[&quot;drziaky-stojany&quot;]">
+					<div class="position-relative inner-box">
+						<div class="image position-relative ">
+							<img src="images/drziakystojany-title/remoteholder_title.jpg" alt="portfolio-image"
+								class="img-fluid w-100 d-block">
+							<div class="overlay-box">
+								<div class="overlay-inner">
+									<a class="overlay-content" href="single-remoteholder.html">
+										<h5 class="mb-0">Remote Holder</h5>
+										<p>Vstúpiť</p>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-4 mb-2 index-padding shuffle-item" data-groups="[&quot;postavy-busty&quot;]">
+					<div class="position-relative inner-box">
+						<div class="image position-relative ">
+							<img src="images/postavy-title/venom_title_555.jpg" alt="portfolio-image"
+								class="img-fluid w-100 d-block">
+							<div class="overlay-box">
+								<div class="overlay-inner">
+									<a class="overlay-content" href="single-venom.html">
+										<h5 class="mb-0">Venom</h5>
+										<p>Vstúpiť</p>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-4 mb-2 index-padding shuffle-item" data-groups="[&quot;postavy-busty&quot;]">
+					<div class="position-relative inner-box">
+						<div class="image position-relative ">
+							<img src="images/postavy-title/blackwidow_title_555.jpg" alt="portfolio-image"
+								class="img-fluid w-100 d-block">
+							<div class="overlay-box">
+								<div class="overlay-inner">
+									<a class="overlay-content" href="single-blackwidow.html">
+										<h5 class="mb-0">Black Widow</h5>
+										<p>Vstúpiť</p>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-4 mb-2 index-padding shuffle-item" data-groups="[&quot;postavy-busty&quot;]">
+					<div class="position-relative inner-box">
+						<div class="image position-relative ">
+							<img src="images/postavy-title/ironman_title_555.jpg" alt="portfolio-image"
+								class="img-fluid w-100 d-block">
+							<div class="overlay-box">
+								<div class="overlay-inner">
+									<a class="overlay-content" href="single-ironman.html">
+										<h5 class="mb-0">Iron Man:Mark II</h5>
+										<p>Vstúpiť</p>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-4 mb-2 index-padding shuffle-item" data-groups="[&quot;postavy-busty&quot;]">
+					<div class="position-relative inner-box">
+						<div class="image position-relative ">
+							<img src="images/postavy-title/blackpanther_title_555.jpg" alt="portfolio-image"
+								class="img-fluid w-100 d-block">
+							<div class="overlay-box">
+								<div class="overlay-inner">
+									<a class="overlay-content" href="single-blackpanther.html">
+										<h5 class="mb-0">Black Panther</h5>
+										<p>Vstúpiť</p>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-4 mb-2 index-padding shuffle-item" data-groups="[&quot;postavy-busty&quot;]">
+					<div class="position-relative inner-box">
+						<div class="image position-relative ">
+							<img src="images/postavy-title/spiderman_title_555.jpg" alt="portfolio-image"
+								class="img-fluid w-100 d-block">
+							<div class="overlay-box">
+								<div class="overlay-inner">
+									<a class="overlay-content" href="single-spiderman.html">
+										<h5 class="mb-0">Spider-Man</h5>
+										<p>Vstúpiť</p>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+	<!-- Portfolio End -->
+
+	<!-- Service start -->
+	<section class="section service-home border-top wallpaper-down mb-5">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 mb-5">
+					<h2 class="mb-4">Ponúkam <span class="text-success">3D</span> Tlač</h2>
+					<p class="mb-2">Chcete spraviť radosť sebe alebo svojim blízkym?<br>Komiksovou postavou, bustou či
+						interiérovou dekoráciou?<br>
+						Potrebujete držiak, stojan či inú súčiastku?<br>
+						Kontaktujte ma a niečo spolu vymyslíme.</p>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-lg-4">
+					<div class="service-item mb-2" data-aos="fade-left">
+						<i class="bi bi-universal-access text-success"></i>
+						<h4 class="my-3">Komiksové Postavy / Busty</h4>
+						<p>Oživte svoj obľúbený komiksový, filmový či herný charakter.</p>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="service-item mb-2" data-aos="fade-left" data-aos-delay="450">
+						<i class="bi bi-lamp-fill text-success"></i>
+						<h4 class="my-3">Interiérové Dekorácie</h4>
+						<p>Rozjasnite si interiér dekoráciami podľa Vášho výberu.</p>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="service-item mb-2 mb-lg-0" data-aos="fade-left" data-aos-delay="750">
+						<i class="bi bi-robot text-success"></i>
+						<h4 class="my-3">Vizitky / Oznámenia</h4>
+						<p>Sprostredkuj svoju správu v novom rozmere.</p>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="service-item" data-aos="fade-left" data-aos-delay="750">
+						<i class="bi bi-wrench-adjustable text-success"></i>
+						<h4 class="my-3">Držiaky / Stojany</h4>
+						<p>Usporiadajte a zjednodušte si svoj priestor.</p>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="service-item mb-2" data-aos="fade-left" data-aos-delay="950">
+						<i class="bi bi-gear-fill text-success"></i>
+						<h4 class="my-3">Náhradné Diely / Súčiastky</h4>
+						<p>Nahraďte pokazené či zlomené novým, vymeňte nefunkčné za funkčné.</p>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="service-item mb-5 mb-lg-0" data-aos="fade-left" data-aos-delay="1050">
+						<i class="bi bi-question-lg text-success"></i>
+						<h4 class="my-3">Podľa Vlastného Výberu</h4>
+						<p>Zhmotnite svoju predstavu.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- service end -->
+
+	<div class="share mt-5 mb-3 text-center">
+		<ul class="list-inline">
+			<li class="mt-5 mb-3">Nájdeš ma na</li>
+			<li class="list-inline-item"><a href="https://www.instagram.com/tlacim3d/"><i
+						class="ti-instagram mr-2"></i>Instagram</a></li>
+			<li class="list-inline-item"><a href="https://www.facebook.com/tlacim3d-102142805976684"><i
+						class="ti-facebook mr-2"></i>Facebook</a></li>
+			<li class="list-inline-item"><a href="https://www.linkedin.com/in/patrik-lov%C3%A1s-131534228/"><i
+						class="ti-linkedin mr-2"></i>Linkedin</a></li>
+		</ul>
+	</div>
+
+	<!-- Footer start -->
+	<section class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6">
+					<p class="mb-0">Copyright &copy; Patrik Lovás. Všetky práva vyhradené 2022 <a
+							href="https://lovaspatrik.sk/" class="text-success">lovaspatrik.sk</a></p>
+				</div>
+
+				<div class="col-lg-6">
+					<div class="widget footer-widget text-lg-right mt-5 mt-lg-0">
+						<ul class="list-inline mb-0">
+							<li class="list-inline-item"><a href="https://www.instagram.com/tlacim3d/"
+									target="_blank"><i class="ti-instagram mr-3"></i></a>
+							</li>
+							<li class="list-inline-item"><a
+									href="https://www.facebook.com/tlacim3d-102142805976684" target="_blank"><i
+										class="ti-facebook mr-3"></i></a>
+							</li>
+							<li class="list-inline-item"><a
+									href="https://www.linkedin.com/in/patrik-lov%C3%A1s-131534228/" target="_blank">
+									<i class="ti-linkedin mr-3"></i></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Footer End -->
+
+	<!-- jQuery -->
+	<script src="plugins/jQuery/jquery.min.js"></script>
+	<!-- Bootstrap JS -->
+	<script src="plugins/bootstrap/bootstrap.min.js"></script>
+	<script src="plugins/aos/aos.js"></script>
+	<script src="plugins/owl-carousel/owl.carousel.min.js"></script>
+	<script src="plugins/shuffle/shuffle.min.js"></script>
+	<script src="plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
+	<script src="plugins/animated-text/animated-text.js"></script>
+	<script src="plugins/counto/apear.js"></script>
+	<script src="plugins/counto/counTo.js"></script>
+
+	<!-- Main Script -->
+	<script src="js/script.js"></script>
+
+</body>
+
+</html>
